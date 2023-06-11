@@ -5,9 +5,9 @@ class Person:
         self._age = age
 
     def display_info(self):
-        print(f"Name: {self._name}")
-        print(f"Occupation: {self._occupation}")
-        print(f"Age: {self._age}")
+        print("Person's name:", Person.get_name(self))
+        print("Person's occupation:", Person.get_occupation(self))
+        print("Person's age:", Person.get_age(self))
 
     # Setter
     def set_name(self, name):

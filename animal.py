@@ -5,11 +5,11 @@ class Animal:
         self._age = age
 
     def display_info(self):
-        print(f"Name: {self._name}")
-        print(f"Species: {self._species}")
-        print(f"Age: {self._age}")
+        print(f"Animal's name:", Animal.get_name(self))
+        print(f"Animal's occupation:", Animal.get_species(self))
+        print(f"Animal's age:", Animal.get_age(self))
 
-    # Setter 
+    # Setter
     def set_name(self, name):
         self._name = name
 
